@@ -141,6 +141,7 @@ RimeEngine::RimeEngine(Instance *instance)
 }
 
 RimeEngine::~RimeEngine() {
+    sync();
     factory_.unregister();
     try {
         if (api_) {
